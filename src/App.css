@@ -1,38 +1,98 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #090a09;
+  color: #f1ffff;
   text-align: center;
+  height: 100%;
+  position: relative;
+  /* overflow-y: hidden; */
+  -webkit-overflow-scrolling: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-family: 'Fugaz One', serif;
+  font-size: 2rem;
+  height: 3rem;
+  text-transform: uppercase;
+  text-align: right;
+  margin-right: 5vw;
+  margin-top: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main {
+  position: relative;
+  height: calc(100vh - 4rem);
+  margin: 0 auto 0 auto;
+  width: 90vw;
 }
 
-.App-link {
-  color: #61dafb;
+#quote-box {
+  width: 100%;
+  height: 20rem;
+  max-height: 50vh;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.5rem;
+  background-color: red;
+  padding: 2rem 1rem;
+  border-radius: 0.4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#word #text {
+  margin-bottom: 1em;
+  font-family: "Caveat", serif;
+  font-size: 1.6rem;
+}
+
+#word #author {
+  font-size: 1.2rem;
+  text-align: right;
+  width: 95%;
+  font-family: "Cinzel";
+  text-transform: uppercase;
+}
+
+#quote-box #buttons {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+}
+
+#quote-box #buttons button {
+  margin-left: 0.5rem;
+  border-radius: 0.2rem;
+  padding: 0.1rem 0.3rem;
+  border: none;
+  height: 1.5rem;
+  width: max-content;
+  /* text-transform: uppercase; */
+  text-transform: capitalize;
+  font-family: "Arima Madurai", serif;
+  font-weight: 500;
+}
+
+footer {
+  display: block;
+  color: #090a09;
+  background-color: #f1ffff;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2.5rem;
+  width: 100%;
 }

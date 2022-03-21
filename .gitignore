@@ -24,3 +24,4 @@ yarn-error.log*
 
 # me, offline
 DNTREADME.md
+/src/components/footer.styles.scss

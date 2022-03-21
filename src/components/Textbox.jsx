@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Textbox({ text }) {
+function Textbox({ text, id }) {
 	return (
-		<div>
+		<div id={id}>
 			{text}
 		</div>
 	)

@@ -5,15 +5,16 @@ function Button({ handleClick, text, id, tweet }) {
 		<>
 			{id === 'tweet-quote'
 				? (
+						<button>
 					<a
 						href={`https://twitter.com/intent/tweet?text=${tweet}`}
 						target="_blank"
 						rel="noreferrer"
+						id={id}
 					>
-						<button>
 							{text}
-						</button>
 					</a>
+						</button>
 				)
 				: (
 					<button onClick={handleClick} id={id}>
